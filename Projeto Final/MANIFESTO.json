@@ -133,8 +133,8 @@
     },
     {
       "arquivo": "docs/innovation-lab/cobertura-imagens.json",
-      "bytes": 2046,
-      "sha256": "2fa4d0d830556f6239fc2bf3dc8c400b3aa9a9af760ed1ecafd25b966b0b2681"
+      "bytes": 2150,
+      "sha256": "683bb668d39d3e27020b6e9ecc178af12008ad9d1be4673ee21a2df9c499ca5f"
     },
     {
       "arquivo": "docs/innovation-lab/evidencias/01-03-vscode-versoes.png",
@@ -338,8 +338,8 @@
     },
     {
       "arquivo": "docs/innovation-lab/LEIA-ME.md",
-      "bytes": 2505,
-      "sha256": "e945d1d934f855b92039db6d5e3eceb07eda2f77440403bdfe6982d2311673ac"
+      "bytes": 2481,
+      "sha256": "870a88441760625710ea1ae91a6bbbd604d1d3c19dd1c28ab66475c66a330a10"
     },
     {
       "arquivo": "docs/innovation-lab/LEITURA_AGENTS_IA.md",
@@ -353,8 +353,8 @@
     },
     {
       "arquivo": "docs/innovation-lab/RELATORIO_FINAL.pdf",
-      "bytes": 3300699,
-      "sha256": "c81f642e23b89cc47f6eafc1163c9a37f79cd5b6430ecf9d71dc8f6485d31241"
+      "bytes": 3554536,
+      "sha256": "e30aed3c15e1190c5328dff5aa1fdc1bebcacc7940acc7ba2fcc06b5fb02cb7f"
     },
     {
       "arquivo": "docs/innovation-lab/resumo.json",
@@ -1739,5 +1739,5 @@
   ],
   "nota": "Fontes revisadas e evidências fictícias; sem dependências, bancos de alunos ou segredos locais. Não comprova deploy.",
   "origem_commit": "5bdceefb698240157f8b23837b70f248567fd138",
-  "revisao": "Cópia compartilhada com Beatriz; página 4 do PDF atualizada com captura real do repositório de destino."
+  "revisao": "Relatório em dupla: capa sem nomes pessoais e dois repositórios na página 4. Código preservado."
 }
