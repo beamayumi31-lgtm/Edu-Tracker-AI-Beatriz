@@ -1,0 +1,15 @@
+Task status: ✓ Complete
+Skipping spec updates (--skip-specs flag provided).
+Change 'auditar-modelo-academico' archived as '2026-11-17-auditar-modelo-academico'.
+
+Task status: ✓ Complete
+Skipping spec updates (--skip-specs flag provided).
+Change 'feature-notas-atividades' archived as '2026-11-17-feature-notas-atividades'.
+
+Task status: ✓ Complete
+Skipping spec updates (--skip-specs flag provided).
+Change 'corrigir-busca-turmas' archived as '2026-11-17-corrigir-busca-turmas'.
+
+Task status: ✓ Complete
+Skipping spec updates (--skip-specs flag provided).
+Change 'importar-turma-completa' archived as '2026-11-17-importar-turma-completa'.

@@ -1,0 +1,12 @@
+✓ spec/administracao
+✓ spec/autenticacao
+✓ spec/calendario-de-estudos
+✓ spec/edu-ia
+✓ spec/entrega-innovation
+✓ change/finalizar-avaliacao
+✓ spec/integracoes-google
+✓ change/integrar-classroom-gemini
+✓ spec/modelo-academico
+✓ spec/organizacao-academica
+✓ spec/relatorios
+Totals: 11 passed, 0 failed (11 items)

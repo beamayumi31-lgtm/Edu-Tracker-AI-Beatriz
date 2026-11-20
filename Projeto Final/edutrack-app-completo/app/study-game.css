@@ -1,0 +1,138 @@
+/* Extensão da identidade EduTrack: verde para foco, laranja para constância. */
+:root { --game-green:#14764e; --game-green-soft:#eaf8f0; --game-orange:#b54c08; --game-orange-soft:#fff2e2; --game-outline:#087c59; }
+html[data-theme='dark'] { --game-green:#70e3ac; --game-green-soft:#142f29; --game-orange:#ffb168; --game-orange-soft:#322619; --game-outline:#7cf0b9; }
+.metric-action { width:100%; text-align:left; color:var(--text); cursor:pointer; font:inherit; transition:transform .18s,box-shadow .18s,border-color .18s; }
+.metric-action:hover { transform:translateY(-3px); border-color:var(--violet); box-shadow:var(--shadow-hover); }
+.metric-action small { display:flex; align-items:center; gap:5px; }
+.metric-action.metric-focus small { color:var(--game-green); }
+.metric-action.metric-streak small { color:var(--game-orange); }
+.metric-action:focus-visible,.study-game button:focus-visible,.study-game select:focus-visible,.focus-running-bar:focus-visible { outline:3px solid var(--violet); outline-offset:4px; }
+.study-game { padding:32px clamp(18px,4vw,52px) 54px; --game-gap:22px; }
+.study-game button,.study-game select { font:inherit; }
+.study-game button { cursor:pointer; }
+.study-game button:disabled { cursor:not-allowed; opacity:.55; }
+.game-heading { display:flex; justify-content:space-between; align-items:center; gap:24px; margin-bottom:28px; }
+.game-heading>div { min-width:0; }
+.game-back { display:flex; gap:7px; align-items:center; background:none; color:var(--muted); padding:0; border:0; margin-bottom:22px; font-size:.875rem!important; }
+.game-heading .eyebrow { display:block; font-size:.75rem; }
+.game-heading h1 { margin:9px 0 7px; font-size:clamp(1.8rem,3vw,2.5rem); letter-spacing:-.04em; line-height:1.15; }
+.game-heading p { margin:0; color:var(--muted); font-size:1rem; }
+.game-streak-link { display:flex; gap:8px; align-items:center; border:1px solid var(--border); border-radius:14px; background:var(--surface); color:var(--game-orange); padding:13px 16px; flex-shrink:0; }
+.game-streak-link strong { font-size:1.3rem; }
+.game-streak-link span { font-size:.875rem; color:var(--muted); }
+.garden-layout,.streak-layout { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr); gap:var(--game-gap); align-items:start; }
+.garden-play { display:flex; flex-direction:column; align-items:center; text-align:center; padding:25px clamp(18px,3vw,40px) 23px; background:radial-gradient(ellipse at 50% 24%,var(--game-green-soft),transparent 68%),var(--surface); }
+.garden-mode { display:flex; gap:5px; padding:5px; border-radius:13px; background:var(--surface-2); width:100%; }
+.garden-mode button { display:flex; justify-content:center; align-items:center; gap:6px; flex:1; min-height:42px; padding:9px; border:0; background:transparent; color:var(--muted); border-radius:9px; font-size:.875rem; }
+.garden-mode button.active { background:var(--surface); color:var(--game-green); box-shadow:0 2px 6px #0000000c; }
+.garden-mode button:disabled { opacity:.65; }
+.garden-mode button.active:disabled { opacity:1; }
+.garden-stage { width:100%; display:grid; grid-template-columns:140px minmax(0,1fr); column-gap:18px; align-items:center; padding:26px 0; }
+.growth-ring { grid-row:1/4; width:140px; height:140px; border-radius:50%; display:grid; place-items:center; position:relative; background:radial-gradient(circle closest-side,var(--game-green-soft) 91%,transparent 92%),conic-gradient(var(--game-green) var(--growth,0%),var(--border) 0); }
+.growth-ring>svg { width:90px; height:90px; color:var(--game-green); transform-origin:50% 100%; }
+.is-growing .growth-ring>svg { animation:tree-breathe 4s ease-in-out infinite; }
+@keyframes tree-breathe { 50% { transform:scale(1.045); } }
+.garden-stage-label { font-size:.875rem; font-weight:650; color:var(--game-green); }
+.garden-clock { font-size:clamp(3.2rem,5vw,4.5rem); font-weight:760; font-variant-numeric:tabular-nums; letter-spacing:-.04em; line-height:1.2; margin-top:5px; }
+.garden-clock>span { opacity:.4; margin:0 3px; }
+.garden-stage p { margin:7px 0 0; font-size:.875rem; color:var(--muted); max-width:100%; overflow-wrap:anywhere; }
+.garden-durations { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; width:100%; }
+.garden-durations button { padding:11px 6px; color:var(--muted); border:1px solid var(--border); border-radius:10px; background:var(--surface); font-size:.875rem; }
+.garden-durations button.active { color:var(--game-green); border-color:var(--game-green); background:var(--game-green-soft); font-weight:750; }
+.garden-task { width:100%; display:grid; text-align:left; gap:8px; font-size:.875rem; color:var(--muted); margin-top:17px; }
+.garden-task select { color:var(--text); border:1px solid var(--border); border-radius:10px; width:100%; background:var(--surface); padding:11px; min-width:0; }
+.garden-actions { width:100%; display:flex; flex-direction:column; gap:10px; margin-top:18px; }
+.garden-start,.streak-start { display:flex; align-items:center; justify-content:center; gap:10px; border:0; border-radius:12px; min-height:51px; padding:12px 18px; font-weight:750!important; color:white; background:#168552; box-shadow:0 4px 0 #0b623b; transition:transform .15s,box-shadow .15s; }
+.garden-start:active,.streak-start:active { transform:translateY(3px); box-shadow:0 1px 0 #0b623b; }
+.garden-abandon { border:0; color:var(--muted); background:none; font-size:.875rem!important; min-height:35px; }
+.game-hint { font-size:.8125rem; color:var(--muted); line-height:1.6; margin:18px 0 0; }
+.garden-side,.streak-side { display:grid; gap:var(--game-gap); }
+.forest-collection header { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.study-game h2 { font-size:1.25rem; letter-spacing:-.02em; margin:7px 0; }
+.forest-count { display:flex; gap:7px; align-items:center; background:var(--game-green-soft); color:var(--game-green); border-radius:10px; padding:8px 11px; font-weight:750; }
+.forest-empty { text-align:center; padding:36px 6px 24px; color:var(--game-green); }
+.forest-empty svg { margin:auto; }
+.forest-empty h3 { color:var(--text); font-size:1rem; margin:14px 0 6px; }
+.forest-empty p,.forest-collection>p { font-size:.875rem; color:var(--muted); line-height:1.6; margin:6px 0; }
+.forest-tiles { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:9px; margin:24px 0 15px; }
+.forest-tiles>div { display:grid; justify-items:center; gap:6px; border-radius:12px; background:var(--game-green-soft); color:var(--game-green); padding:12px 3px 9px; }
+.forest-tiles svg { width:34px; height:34px; }
+.forest-tiles span { font-size:.75rem; }
+.forest-milestone { display:flex; align-items:center; gap:10px; margin-top:22px; color:var(--game-green); }
+.forest-milestone svg { flex-shrink:0; }
+.forest-milestone>div { display:grid; gap:5px; }
+.forest-milestone strong { font-size:.875rem; color:var(--text); }
+.forest-milestone span { font-size:.8125rem; color:var(--muted); }
+.study-game progress { display:block; width:100%; height:8px; appearance:none; border:0; border-radius:10px; overflow:hidden; background:var(--surface-3); margin:16px 0 0; color:var(--game-green); }
+.study-game progress::-webkit-progress-bar { background:var(--surface-3); }
+.study-game progress::-webkit-progress-value { background:var(--game-green); border-radius:10px; }
+.study-game progress::-moz-progress-bar { background:var(--game-green); border-radius:10px; }
+.garden-today { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.garden-today>div { display:grid; gap:7px; }
+.garden-today>div+div { border-left:1px solid var(--border); padding-left:18px; }
+.garden-today span { font-size:.875rem; color:var(--muted); }
+.garden-today strong { font-size:1.65rem; }
+.garden-today small { font-size:.875rem; font-weight:450; color:var(--muted); }
+.garden-note { display:flex; align-items:flex-start; gap:10px; color:var(--game-green); padding:0 10px; }
+.garden-note svg { flex-shrink:0; margin-top:3px; }
+.garden-note p { color:var(--muted); font-size:.875rem; line-height:1.7; margin:0; }
+.game-confirm { border:1px solid var(--border); border-radius:20px; padding:28px; width:min(470px,calc(100vw - 36px)); color:var(--text); background:var(--surface); margin:auto; max-height:90dvh; overflow:auto; }
+.game-confirm::backdrop { background:#050c22aa; }
+.game-confirm>.icon-button { float:right; }
+.game-confirm>svg { color:var(--game-green); }
+.game-confirm p { font-size:1rem; color:var(--muted); line-height:1.7; }
+.game-confirm>div { display:flex; flex-wrap:wrap; gap:12px; justify-content:flex-end; margin-top:23px; }
+.focus-running-bar { display:flex; gap:10px; align-items:center; width:100%; border:0; border-bottom:1px solid var(--border); padding:12px clamp(18px,4vw,52px); color:var(--game-green); background:var(--game-green-soft); font-size:.875rem; cursor:pointer; }
+.focus-running-bar>strong { margin-left:auto; display:flex; gap:8px; align-items:center; }
+.game-loading { padding:40px; color:var(--muted); }
+.streak-main { text-align:center; padding:30px clamp(18px,3vw,40px); background:radial-gradient(ellipse at 50% 20%,var(--game-orange-soft),transparent 65%),var(--surface); }
+.streak-flame { width:102px; height:115px; margin:auto; display:grid; place-items:center; color:var(--game-orange); }
+.streak-flame svg { width:98px; height:98px; fill:var(--game-orange-soft); }
+.streak-flame.lit svg { fill:#ffac3d; color:#ed7413; filter:drop-shadow(0 8px 16px #f7a03b33); }
+.streak-score { display:flex; flex-direction:column; align-items:center; gap:2px; }
+.streak-score strong { font-size:4.5rem; line-height:1; letter-spacing:-.05em; color:var(--game-orange); }
+.streak-score>span { font-size:1.125rem; font-weight:700; margin-bottom:22px; }
+.streak-main>p { font-size:1rem; color:var(--muted); line-height:1.6; margin:10px auto 24px; max-width:36ch; }
+.streak-week { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:7px; margin:22px 0 28px; }
+.streak-week>div { display:flex; flex-direction:column; align-items:center; gap:9px; }
+.streak-week>div>span { font-size:.8125rem; color:var(--muted); }
+.streak-week i { width:100%; max-width:44px; aspect-ratio:1; border-radius:50%; background:var(--surface-2); border:2px solid var(--border); font-size:.875rem; font-style:normal; font-weight:700; display:grid; place-items:center; color:var(--muted); }
+.streak-week small { font-size:.75rem; color:var(--muted); }
+.streak-week .done i { background:#ee850e; color:#fff; border-color:#ee850e; }
+.streak-week .today i { outline:2px solid var(--game-orange); outline-offset:3px; }
+.streak-week .today>span,.streak-week .today small { color:var(--game-orange); font-weight:750; }
+.streak-week .future i { border-style:dashed; }
+.streak-start { width:100%; background:#c75b09; box-shadow:0 4px 0 #99450b; }
+.streak-start:active { box-shadow:0 1px 0 #99450b; }
+.streak-goal .eyebrow { display:flex; align-items:center; gap:8px; color:var(--game-orange); }
+.streak-goal h2 { margin-top:18px; font-size:1.5rem; }
+.streak-goal p { font-size:.875rem; line-height:1.7; color:var(--muted); }
+.streak-goal progress { color:#ee850e; }
+.streak-goal progress::-webkit-progress-value { background:#ee850e; }
+.streak-goal progress::-moz-progress-bar { background:#ee850e; }
+.streak-goal>div { display:flex; align-items:center; gap:15px; border-top:1px solid var(--border); margin-top:25px; padding-top:22px; color:var(--game-orange); }
+.streak-goal>div>svg { width:38px; height:38px; }
+.streak-goal>div>span { display:grid; gap:5px; font-size:.875rem; color:var(--muted); }
+.streak-goal strong { font-size:1.4rem; color:var(--text); }
+.streak-rule h2 { margin:0 0 18px; }
+.streak-rule ul { display:grid; gap:15px; padding:0; margin:0; list-style:none; }
+.streak-rule li { display:flex; gap:9px; font-size:.875rem; line-height:1.6; }
+.streak-rule li svg { color:var(--game-orange); width:17px; height:17px; flex-shrink:0; margin-top:3px; }
+.streak-rule p { font-size:.8125rem; color:var(--muted); line-height:1.7; margin:20px 0 0; }
+.streak-achievements { margin-top:var(--game-gap); }
+.streak-achievements header { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.streak-achievements header>span { font-size:.875rem; color:var(--muted); }
+.streak-badges { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:12px; margin-top:23px; }
+.streak-badges article { display:flex; flex-direction:column; align-items:center; gap:8px; padding:20px 8px; background:var(--surface-2); border:1px solid var(--border); border-radius:14px; text-align:center; }
+.streak-badge-icon { width:46px; height:46px; border-radius:15px; background:var(--surface-3); color:var(--muted); display:grid; place-items:center; margin-bottom:5px; }
+.streak-badges article>strong { font-size:1.125rem; }
+.streak-badges article>span:not(.streak-badge-icon) { font-size:.875rem; color:var(--muted); }
+.streak-badges article>small { font-size:.75rem; color:var(--muted); }
+.streak-badges .earned { border-color:var(--game-orange); background:var(--game-orange-soft); }
+.earned .streak-badge-icon { background:var(--game-orange); color:var(--surface); }
+.streak-badges .earned>small { color:var(--game-orange); font-weight:700; }
+@media (max-width:1100px) { .garden-layout,.streak-layout { grid-template-columns:1fr; } .garden-side,.streak-side { grid-template-columns:1fr 1fr; } .garden-note { grid-column:1/-1; } .garden-today { align-self:start; } }
+@media (max-width:760px) { .study-game { padding:24px 18px 100px; } .game-heading { flex-wrap:wrap; gap:18px; margin-bottom:22px; } .game-back { margin-bottom:16px; } .garden-play,.streak-main { padding:20px 16px 24px; } .garden-side,.streak-side { grid-template-columns:1fr; } .streak-badges { grid-template-columns:repeat(2,minmax(0,1fr)); } .streak-achievements header { align-items:flex-start; flex-direction:column; gap:6px; } .focus-running-bar { flex-wrap:wrap; } .focus-running-bar>strong { margin-left:27px; } .metric-action small { flex-wrap:wrap; } }
+@media (max-width:500px) { .garden-stage { grid-template-columns:95px minmax(0,1fr); gap:8px; padding:24px 0; } .growth-ring { width:90px; height:90px; } .growth-ring>svg { width:60px; height:60px; } .garden-clock { font-size:3rem; } .garden-stage-label { font-size:.8125rem; } }
+@media (max-width:380px) { .garden-mode { flex-direction:column; } .streak-week { gap:5px; } .streak-week i { border-width:1px; } .forest-tiles { grid-template-columns:repeat(3,1fr); } }
+@media (prefers-reduced-motion:reduce) { .is-growing .growth-ring>svg { animation:none; } .metric-action,.garden-start,.streak-start { transition:none; } }

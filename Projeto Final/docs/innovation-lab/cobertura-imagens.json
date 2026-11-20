@@ -1,0 +1,122 @@
+{
+  "total_paginas": 39,
+  "tarefas_com_imagens": 16,
+  "cobertura": [
+    {
+      "tarefa": 1,
+      "pagina_texto": 3,
+      "paginas_com_imagens": [
+        4,
+        5
+      ]
+    },
+    {
+      "tarefa": 2,
+      "pagina_texto": 6,
+      "paginas_com_imagens": [
+        7
+      ]
+    },
+    {
+      "tarefa": 3,
+      "pagina_texto": 8,
+      "paginas_com_imagens": [
+        9
+      ]
+    },
+    {
+      "tarefa": 4,
+      "pagina_texto": 10,
+      "paginas_com_imagens": [
+        11
+      ]
+    },
+    {
+      "tarefa": 5,
+      "pagina_texto": 12,
+      "paginas_com_imagens": [
+        13
+      ]
+    },
+    {
+      "tarefa": 6,
+      "pagina_texto": 14,
+      "paginas_com_imagens": [
+        15
+      ]
+    },
+    {
+      "tarefa": 7,
+      "pagina_texto": 16,
+      "paginas_com_imagens": [
+        17
+      ]
+    },
+    {
+      "tarefa": 8,
+      "pagina_texto": 18,
+      "paginas_com_imagens": [
+        19
+      ]
+    },
+    {
+      "tarefa": 9,
+      "pagina_texto": 20,
+      "paginas_com_imagens": [
+        21,
+        22
+      ]
+    },
+    {
+      "tarefa": 10,
+      "pagina_texto": 23,
+      "paginas_com_imagens": [
+        24
+      ]
+    },
+    {
+      "tarefa": 11,
+      "pagina_texto": 25,
+      "paginas_com_imagens": [
+        26
+      ]
+    },
+    {
+      "tarefa": 12,
+      "pagina_texto": 27,
+      "paginas_com_imagens": [
+        28
+      ]
+    },
+    {
+      "tarefa": 13,
+      "pagina_texto": 29,
+      "paginas_com_imagens": [
+        30,
+        31
+      ]
+    },
+    {
+      "tarefa": 14,
+      "pagina_texto": 32,
+      "paginas_com_imagens": [
+        33
+      ]
+    },
+    {
+      "tarefa": 15,
+      "pagina_texto": 34,
+      "paginas_com_imagens": [
+        35,
+        36
+      ]
+    },
+    {
+      "tarefa": 16,
+      "pagina_texto": 37,
+      "paginas_com_imagens": [
+        38
+      ]
+    }
+  ]
+}

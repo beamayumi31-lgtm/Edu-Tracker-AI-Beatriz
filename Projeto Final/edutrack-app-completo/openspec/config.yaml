@@ -1,0 +1,35 @@
+schema: spec-driven
+
+context: |
+  Language: Português do Brasil
+  All artifacts must be written in Português do Brasil.
+  Keep OpenSpec structural headings and SHALL/MUST keywords in English.
+  Produto: EduTrack, plataforma acadêmica multiusuário para organizar cursos, disciplinas, tarefas, sessões de foco, relatórios e assistência por IA.
+  Web: TypeScript, React 19, Next.js 16 e Vinext, com temas claro e escuro e responsividade.
+  Dados atuais: a versão local conecta cursos, disciplinas, tarefas e sessões à API Python/FastAPI e ao SQL Server. Preferências visuais e rascunhos permanecem no navegador; não migrar dados antigos automaticamente.
+  Backend atual: serviço separado em ../edutrack-api, com isolamento obrigatório por usuario_id. A disponibilidade local não comprova integração ou publicação do site público.
+  Segurança: nunca persistir senha em texto puro; usar senha_hash no servidor. CPF, e-mail e telefone devem ser protegidos e mascarados.
+  Autorização: contas públicas começam como student. Toda rota administrativa deve validar role=admin no servidor e responder 401 ou 403 quando necessário.
+  Integrações no código: verificação por e-mail via SendGrid, planejador por regras e agente Edu IA; envio e IA externa dependem de configuração e consentimento. SMS, pagamentos e cliente Flutter continuam planejados.
+  Documentação: consultar ../edutrack-documentacao/DOCUMENTACAO.md e os guias de cada funcionalidade. Requisitos em specs não são prova de implementação ou publicação; registrar separadamente as validações realizadas.
+  Compatibilidade: preservar a arquitetura existente, o tema visual, a navegação responsiva e as alterações já aprovadas.
+
+rules:
+  proposal:
+    - Descrever objetivo, impacto para aluno e administrador, riscos, dependências da API e itens explicitamente fora do escopo.
+    - Não propor alterações de produção, banco, cobrança ou envio externo sem aprovação específica.
+  specs:
+    - Incluir pelo menos um cenário de sucesso e um cenário de acesso negado ou erro para recursos protegidos.
+    - Diferenciar comportamento do protótipo local do comportamento obrigatório da API real.
+  tasks:
+    - Separar interface, contrato da API, persistência, segurança e validação em tarefas verificáveis.
+    - Incluir build, TypeScript e lint na etapa de validação.
+
+operations:
+  apply:
+    guidance:
+      - Preservar dados e alterações existentes fora do escopo da proposta.
+      - Não executar migrações no SQL Server nem publicar o site sem autorização do usuário.
+  archive:
+    guidance:
+      - Registrar o que foi realmente implementado e manter como pendente tudo que depender de configuração, integração, testes ou publicação ainda não realizados.

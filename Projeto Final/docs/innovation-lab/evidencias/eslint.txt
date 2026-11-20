@@ -1,0 +1,3 @@
+
+> edutrack-app-completo@0.1.0 lint
+> eslint . --ignore-pattern dist --ignore-pattern .next

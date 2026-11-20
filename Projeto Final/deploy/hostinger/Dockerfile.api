@@ -1,0 +1,19 @@
+FROM python:3.12-slim-bookworm@sha256:e697c81897302a4c4333bade000d98038fbb21eb064f8ee1fd42d02ebcd9d337
+ARG ACCEPT_MICROSOFT_EULA
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+# O driver oficial exige aceite próprio; não há valor de aceite padrão neste arquivo.
+RUN test "$ACCEPT_MICROSOFT_EULA" = Y \
+ && apt-get update \
+ && apt-get install --no-install-recommends -y curl ca-certificates libgssapi-krb5-2 \
+ && curl --fail --silent --show-error --location https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -o /tmp/microsoft.deb \
+ && dpkg -i /tmp/microsoft.deb \
+ && apt-get update \
+ && ACCEPT_EULA="$ACCEPT_MICROSOFT_EULA" apt-get install --no-install-recommends -y msodbcsql18 \
+ && rm -rf /var/lib/apt/lists/* /tmp/microsoft.deb
+WORKDIR /app
+COPY edutrack-api/requirements.lock.txt edutrack-api/pyproject.toml ./
+COPY edutrack-api/edutrack ./edutrack
+RUN pip install --no-cache-dir -r requirements.lock.txt \
+ && pip install --no-cache-dir --no-deps . \
+ && useradd --uid 10002 --no-create-home --shell /usr/sbin/nologin edutrack
+USER 10002

@@ -1,0 +1,244 @@
+{
+  "ambiente": "SQLite temporário; dados fictícios; nenhum serviço externo",
+  "passos": [
+    {
+      "metodo": "POST",
+      "rota": "/api/auth/login",
+      "status": 200,
+      "nota": "Credencial fictícia; token omitido."
+    },
+    {
+      "metodo": "POST",
+      "rota": "/api/courses",
+      "status": 201,
+      "resposta": {
+        "nome": "Ciência da Computação - demonstração",
+        "instituicao": "Ambiente fictício de avaliação",
+        "data_inicio": null,
+        "data_fim": null,
+        "id": "b624e3f6-0e75-4d5f-b0f6-0b43ca682c50",
+        "criado_em": "2026-11-17T22:45:02.531616Z",
+        "atualizado_em": "2026-11-17T22:45:02.531616Z"
+      }
+    },
+    {
+      "metodo": "POST",
+      "rota": "/api/disciplines",
+      "status": 201,
+      "resposta": {
+        "curso_id": "b624e3f6-0e75-4d5f-b0f6-0b43ca682c50",
+        "nome": "Banco de Dados",
+        "professor": "Professor de demonstração",
+        "carga_horaria": 80,
+        "id": "666519b9-da3e-4785-b6cb-798ba6c97d67",
+        "criado_em": "2026-11-17T22:45:02.560445Z",
+        "atualizado_em": "2026-11-17T22:45:02.560445Z"
+      }
+    },
+    {
+      "metodo": "PUT",
+      "rota": "/api/disciplines/666519b9-da3e-4785-b6cb-798ba6c97d67",
+      "status": 200,
+      "resposta": {
+        "curso_id": "b624e3f6-0e75-4d5f-b0f6-0b43ca682c50",
+        "nome": "Banco de Dados e SQL",
+        "professor": "Professor de demonstração",
+        "carga_horaria": 80,
+        "id": "666519b9-da3e-4785-b6cb-798ba6c97d67",
+        "criado_em": "2026-11-17T22:45:02.560445Z",
+        "atualizado_em": "2026-11-17T22:45:02.589456Z"
+      }
+    },
+    {
+      "metodo": "POST",
+      "rota": "/api/tasks",
+      "status": 201,
+      "resposta": {
+        "id": "774b72af-9ea6-4921-8acf-10ad21cf5277",
+        "disciplina_id": "666519b9-da3e-4785-b6cb-798ba6c97d67",
+        "titulo": "Modelo relacional",
+        "descricao": null,
+        "data_prevista": "2026-01-01T12:00:00Z",
+        "status": "concluida",
+        "minutos_estimados": null,
+        "concluido_em": "2026-11-17T22:45:02.611602Z",
+        "criado_em": "2026-11-17T22:45:02.613617Z",
+        "atualizado_em": "2026-11-17T22:45:02.613617Z"
+      }
+    },
+    {
+      "metodo": "POST",
+      "rota": "/api/tasks",
+      "status": 201,
+      "resposta": {
+        "id": "1cda1b8e-3123-4ba3-aca8-e22938c05893",
+        "disciplina_id": "666519b9-da3e-4785-b6cb-798ba6c97d67",
+        "titulo": "Normalização",
+        "descricao": null,
+        "data_prevista": "2026-01-01T12:00:00Z",
+        "status": "concluida",
+        "minutos_estimados": null,
+        "concluido_em": "2026-11-17T22:45:02.638540Z",
+        "criado_em": "2026-11-17T22:45:02.638540Z",
+        "atualizado_em": "2026-11-17T22:45:02.638540Z"
+      }
+    },
+    {
+      "metodo": "POST",
+      "rota": "/api/tasks",
+      "status": 201,
+      "resposta": {
+        "id": "c4c471dc-6818-412e-9f80-6cc198081c60",
+        "disciplina_id": "666519b9-da3e-4785-b6cb-798ba6c97d67",
+        "titulo": "Consultas JOIN",
+        "descricao": null,
+        "data_prevista": "2026-01-01T12:00:00Z",
+        "status": "concluida",
+        "minutos_estimados": null,
+        "concluido_em": "2026-11-17T22:45:02.657082Z",
+        "criado_em": "2026-11-17T22:45:02.657082Z",
+        "atualizado_em": "2026-11-17T22:45:02.657082Z"
+      }
+    },
+    {
+      "metodo": "POST",
+      "rota": "/api/tasks",
+      "status": 201,
+      "resposta": {
+        "id": "d3eaee27-a593-456c-998b-9c9758e7eb62",
+        "disciplina_id": "666519b9-da3e-4785-b6cb-798ba6c97d67",
+        "titulo": "Revisão final",
+        "descricao": null,
+        "data_prevista": "2026-01-01T12:00:00Z",
+        "status": "pendente",
+        "minutos_estimados": null,
+        "concluido_em": null,
+        "criado_em": "2026-11-17T22:45:02.679706Z",
+        "atualizado_em": "2026-11-17T22:45:02.679706Z"
+      }
+    },
+    {
+      "metodo": "GET",
+      "rota": "/api/disciplines",
+      "status": 200,
+      "resposta": {
+        "items": [
+          {
+            "curso_id": "b624e3f6-0e75-4d5f-b0f6-0b43ca682c50",
+            "nome": "Banco de Dados e SQL",
+            "professor": "Professor de demonstração",
+            "carga_horaria": 80,
+            "id": "666519b9-da3e-4785-b6cb-798ba6c97d67",
+            "criado_em": "2026-11-17T22:45:02.560445Z",
+            "atualizado_em": "2026-11-17T22:45:02.589456Z"
+          }
+        ],
+        "total": 1,
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "metodo": "GET",
+      "rota": "/api/search/disciplines?q=Banco&overdue=true",
+      "status": 200,
+      "resposta": {
+        "items": [
+          {
+            "curso_id": "b624e3f6-0e75-4d5f-b0f6-0b43ca682c50",
+            "nome": "Banco de Dados e SQL",
+            "professor": "Professor de demonstração",
+            "carga_horaria": 80,
+            "id": "666519b9-da3e-4785-b6cb-798ba6c97d67",
+            "criado_em": "2026-11-17T22:45:02.560445Z",
+            "atualizado_em": "2026-11-17T22:45:02.589456Z"
+          }
+        ],
+        "total": 1,
+        "limit": 50,
+        "offset": 0
+      }
+    },
+    {
+      "metodo": "GET",
+      "rota": "/api/dashboard",
+      "status": 200,
+      "resposta": {
+        "cursos": 1,
+        "disciplinas": 1,
+        "tarefas_por_status": {
+          "concluida": 3,
+          "pendente": 1
+        },
+        "total_tarefas": 4,
+        "minutos_estudados": 0,
+        "progresso_percentual": 75
+      }
+    },
+    {
+      "metodo": "GET",
+      "rota": "/api/reports/generate",
+      "status": 200,
+      "resposta": {
+        "download_url": "/api/reports/progress.pdf",
+        "filename": "edutrack-progresso.pdf",
+        "requires_authentication": true,
+        "scope": "all_time"
+      }
+    },
+    {
+      "metodo": "GET",
+      "rota": "/api/reports/progress.pdf",
+      "status": 200,
+      "bytes": 2433,
+      "arquivo": "relatorio-progresso-demonstracao.pdf"
+    },
+    {
+      "metodo": "DELETE",
+      "rota": "/api/tasks/774b72af-9ea6-4921-8acf-10ad21cf5277",
+      "status": 204,
+      "resposta": null
+    },
+    {
+      "metodo": "DELETE",
+      "rota": "/api/tasks/1cda1b8e-3123-4ba3-aca8-e22938c05893",
+      "status": 204,
+      "resposta": null
+    },
+    {
+      "metodo": "DELETE",
+      "rota": "/api/tasks/c4c471dc-6818-412e-9f80-6cc198081c60",
+      "status": 204,
+      "resposta": null
+    },
+    {
+      "metodo": "DELETE",
+      "rota": "/api/tasks/d3eaee27-a593-456c-998b-9c9758e7eb62",
+      "status": 204,
+      "resposta": null
+    },
+    {
+      "metodo": "DELETE",
+      "rota": "/api/disciplines/666519b9-da3e-4785-b6cb-798ba6c97d67",
+      "status": 204,
+      "resposta": null
+    },
+    {
+      "metodo": "DELETE",
+      "rota": "/api/courses/b624e3f6-0e75-4d5f-b0f6-0b43ca682c50",
+      "status": 204,
+      "resposta": null
+    },
+    {
+      "metodo": "GET",
+      "rota": "/api/disciplines",
+      "status": 200,
+      "resposta": {
+        "items": [],
+        "total": 0,
+        "limit": 50,
+        "offset": 0
+      }
+    }
+  ]
+}

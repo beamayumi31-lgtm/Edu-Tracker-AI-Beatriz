@@ -1,0 +1,37 @@
+{
+  "folders": [
+    {
+      "name": "Frontend",
+      "path": "edutrack-app-completo"
+    },
+    {
+      "name": "Backend",
+      "path": "edutrack-api"
+    },
+    {
+      "name": "Documentação",
+      "path": "edutrack-documentacao"
+    },
+    {
+      "name": "Entrega Innovation Lab",
+      "path": "docs/innovation-lab"
+    }
+  ],
+  "settings": {
+    "files.encoding": "utf8",
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.venv": true,
+      "**/.next-hostinger": true,
+      "**/__pycache__": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "charliermarsh.ruff",
+      "dbaeumer.vscode-eslint",
+      "yzhang.markdown-all-in-one"
+    ]
+  }
+}

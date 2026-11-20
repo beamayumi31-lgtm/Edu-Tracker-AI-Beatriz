@@ -1,0 +1,37 @@
+name: Verificar EduTrack
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: edutrack-app-completo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11.25.0'
+      - run: pnpm install --frozen-lockfile
+      - run: node --experimental-strip-types --test tests/*.test.mjs
+      - run: pnpm lint
+      - run: pnpm run openspec:validate
+      - run: pnpm run build:hostinger
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: edutrack-api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.lock.txt
+      - run: python -m pip install --no-deps -e .
+      - run: ruff check edutrack scripts tests
+      - run: python -m pytest -q

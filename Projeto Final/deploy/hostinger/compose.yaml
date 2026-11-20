@@ -1,0 +1,76 @@
+name: edutrack
+
+# Executar somente depois da aprovação da implantação e do provisionamento privado.
+services:
+  sql:
+    image: mcr.microsoft.com/mssql/server:2022-latest@sha256:cf8f0ab2ebe61feec2eed2629061a07d247f791c2a8ddda74a4ac9f06a291718
+    restart: unless-stopped
+    environment:
+      ACCEPT_EULA: ${ACCEPT_MICROSOFT_EULA:?Confirmar os termos Microsoft antes de executar}
+      MSSQL_PID: Express
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD:?Configurar segredo fora do Git}
+      MSSQL_MEMORY_LIMIT_MB: '2048'
+    ports:
+      - '127.0.0.1:14330:1433'
+    volumes:
+      - sql_data:/var/opt/mssql
+      - ./mssql.conf:/var/opt/mssql/mssql.conf:ro
+      - /opt/edutrack/secrets/tls:/etc/edutrack/tls:ro
+    mem_limit: 3g
+    cpus: 1.0
+    security_opt:
+      - no-new-privileges:true
+  api:
+    build:
+      context: ../..
+      dockerfile: deploy/hostinger/Dockerfile.api
+      args:
+        ACCEPT_MICROSOFT_EULA: ${ACCEPT_MICROSOFT_EULA:?Confirmar os termos Microsoft antes de executar}
+    restart: unless-stopped
+    # A API só escuta em loopback, preservando a validação de destinos HTTP do frontend.
+    network_mode: host
+    env_file: /opt/edutrack/secrets/backend.env
+    volumes:
+      - /opt/edutrack/secrets/public-ca:/etc/edutrack-ca:ro
+    environment:
+      SSL_CERT_FILE: /etc/edutrack-ca/ca-certificates.crt
+    command: ['uvicorn', 'edutrack.main:app_factory', '--factory', '--host', '127.0.0.1', '--port', '8000', '--workers', '1', '--no-access-log', '--no-proxy-headers']
+    mem_limit: 768m
+    cpus: 0.75
+    read_only: true
+    tmpfs: ['/tmp:rw,noexec,nosuid,size=64m']
+    security_opt: ['no-new-privileges:true']
+    cap_drop: ['ALL']
+    healthcheck:
+      test: ['CMD', 'python', '-c', "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready',timeout=5)"]
+      interval: 30s
+      timeout: 8s
+      retries: 3
+      start_period: 40s
+  web:
+    build:
+      context: ../..
+      dockerfile: deploy/hostinger/Dockerfile.web
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      NODE_ENV: production
+      HOSTNAME: '127.0.0.1'
+      PORT: '3002'
+      EDUTRACK_API_URL: 'http://127.0.0.1:8000'
+      EDUTRACK_SITE_URL: 'https://srv1834976.hstgr.cloud'
+    depends_on:
+      api:
+        condition: service_healthy
+    mem_limit: 768m
+    cpus: 0.75
+    security_opt: ['no-new-privileges:true']
+    cap_drop: ['ALL']
+    healthcheck:
+      test: ['CMD', 'node', '-e', "fetch('http://127.0.0.1:3002/login').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 8s
+      retries: 3
+      start_period: 40s
+volumes:
+  sql_data:

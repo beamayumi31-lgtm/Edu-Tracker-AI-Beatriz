@@ -1,0 +1,23 @@
+{
+  "ambiente": "Demonstração local descartável (SQLite), sem dados reais de alunos",
+  "capturado_em": "2026-11-18T01:10:25.288351Z",
+  "metodo": "POST",
+  "url": "http://127.0.0.1:8014/api/disciplines",
+  "requisicao": {
+    "curso_id": "84ce7aff-6d24-4195-919c-4cd6a4ab5cfa",
+    "nome": "Engenharia de Software - demonstração",
+    "professor": "Professor de demonstração",
+    "carga_horaria": 80
+  },
+  "status_http": 201,
+  "resposta": {
+    "curso_id": "84ce7aff-6d24-4195-919c-4cd6a4ab5cfa",
+    "nome": "Engenharia de Software - demonstração",
+    "professor": "Professor de demonstração",
+    "carga_horaria": 80,
+    "id": "57b75655-a4ae-4599-8f06-54d99d37e93f",
+    "criado_em": "2026-11-18T01:10:25.288351Z",
+    "atualizado_em": "2026-11-18T01:10:25.288351Z"
+  },
+  "tempo_ms": 156
+}

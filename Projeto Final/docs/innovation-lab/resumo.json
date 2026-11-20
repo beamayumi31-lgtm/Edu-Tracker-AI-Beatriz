@@ -1,0 +1,82 @@
+[
+  {
+    "numero": 1,
+    "titulo": "Git e GitHub",
+    "situacao": "Executado com adaptação de repositório"
+  },
+  {
+    "numero": 2,
+    "titulo": "VS Code, Node.js e assistência de IA",
+    "situacao": "Ambiente preparado; autenticação Gemini não comprovada"
+  },
+  {
+    "numero": 3,
+    "titulo": "Instalação e estrutura OpenSpec",
+    "situacao": "Executado na estrutura atual"
+  },
+  {
+    "numero": 4,
+    "titulo": "Sincronização de backend",
+    "situacao": "Adaptado para Python/SQL Server"
+  },
+  {
+    "numero": 5,
+    "titulo": "Branch, commit e Pull Request",
+    "situacao": "Executado"
+  },
+  {
+    "numero": 6,
+    "titulo": "Pesquisa de referências e templates",
+    "situacao": "Executado"
+  },
+  {
+    "numero": 7,
+    "titulo": "Projeto de frontend, tema e API",
+    "situacao": "Adaptado para React"
+  },
+  {
+    "numero": 8,
+    "titulo": "Primeira proposta e modelo de disciplinas",
+    "situacao": "Modelo existente auditado"
+  },
+  {
+    "numero": 9,
+    "titulo": "Assets, telas e navegação",
+    "situacao": "Executado no frontend existente"
+  },
+  {
+    "numero": 10,
+    "titulo": "AGENTS.md e proposta de teste",
+    "situacao": "Executado com Codex e escopo de planejamento"
+  },
+  {
+    "numero": 11,
+    "titulo": "Modelo de tarefas acadêmicas",
+    "situacao": "Modelo existente auditado"
+  },
+  {
+    "numero": 12,
+    "titulo": "Cálculo de progresso em Python",
+    "situacao": "Implementado e testado"
+  },
+  {
+    "numero": 13,
+    "titulo": "APIs CRUD de disciplinas",
+    "situacao": "Executado no FastAPI"
+  },
+  {
+    "numero": 14,
+    "titulo": "Busca avançada híbrida",
+    "situacao": "Implementado e testado"
+  },
+  {
+    "numero": 15,
+    "titulo": "Relatório PDF de progresso",
+    "situacao": "Implementado e testado"
+  },
+  {
+    "numero": 16,
+    "titulo": "Auditoria e entrega final",
+    "situacao": "Entrega local com adaptações declaradas"
+  }
+]
