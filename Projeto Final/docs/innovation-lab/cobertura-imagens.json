@@ -119,10 +119,15 @@
       ]
     }
   ],
-  "revisao_github_beatriz": {
+  "revisao_pdf_dupla": {
     "data": "2026-11-19",
-    "pagina": 4,
-    "paginas_preservadas": 38,
-    "sha256_pdf": "c81f642e23b89cc47f6eafc1163c9a37f79cd5b6430ecf9d71dc8f6485d31241"
+    "titulo": "EduTrack 16 tarefas",
+    "paginas_atualizadas": [
+      1,
+      4
+    ],
+    "prints_github_na_pagina_4": 2,
+    "paginas_preservadas": 37,
+    "sha256_pdf": "e30aed3c15e1190c5328dff5aa1fdc1bebcacc7940acc7ba2fcc06b5fb02cb7f"
   }
 }

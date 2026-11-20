@@ -26,10 +26,10 @@ Nenhum trabalho foi entregue automaticamente no Classroom. A produção não foi
 
 [PR final #2 — aberto para revisão do professor](https://github.com/antoniobrites/Faculdade-Impacta/pull/2). Código enviado na branch `codex/innovation-lab-16-tarefas`.
 
-## Revisão ilustrada
+## Revisão ilustrada - 19/11/2026
 
-Relatório atualizado com 39 páginas e imagens em cada uma das 16 tarefas. A página 4 mostra o GitHub de Beatriz na pasta `Projeto Final`, atualizado em 19/11/2026; as páginas 30 e 31 mostram a requisição JSON e a resposta HTTP 201 executadas no Swagger local. As legendas identificam telas, código, ambiente e limites da evidência. `imagens_por_tarefa.json` relaciona os prints e `cobertura-imagens.json` informa as páginas verificadas.
+O relatório foi atualizado para o trabalho em dupla, com o título **EduTrack 16 tarefas** e sem nomes pessoais na capa, nas legendas ou nos metadados de autoria. O caminho `RELATORIO_FINAL.pdf` foi mantido para preservar os links existentes.
 
-## Cópia compartilhada com Beatriz — 19/11/2026
+A página 4 reúne os dois prints dos repositórios do grupo, com links clicáveis nas próprias imagens. O repositório compartilhado também está público. O PDF mantém 39 páginas e imagens em todas as 16 tarefas; as páginas 30 e 31 preservam a requisição JSON e a resposta HTTP 201 executadas no Swagger local. Os PRs e testes continuam documentando a execução original.
 
-[Abrir Projeto Final no GitHub da Beatriz](https://github.com/beamayumi31-lgtm/Edu-Tracker-AI-Beatriz/tree/main/Projeto%20Final). O repositório permanece privado. O PDF preserva as outras 38 páginas do relatório original; a nova imagem da página 4 identifica o destino desta cópia. Os PRs citados continuam sendo os do repositório original do grupo.
+`cobertura-imagens.json` registra a cobertura das tarefas e o SHA-256 do PDF atualizado. As duas páginas alteradas foram renderizadas e conferidas; as outras 37 páginas foram preservadas.
