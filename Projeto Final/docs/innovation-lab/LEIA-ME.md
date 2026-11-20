@@ -28,4 +28,8 @@ Nenhum trabalho foi entregue automaticamente no Classroom. A produção não foi
 
 ## Revisão ilustrada
 
-Relatório atualizado com 39 páginas e imagens em cada uma das 16 tarefas. A página 4 mostra o GitHub na pasta `2-semestre/Projeto Final`; as páginas 30 e 31 mostram a requisição JSON e a resposta HTTP 201 executadas no Swagger local. As legendas identificam telas, código, ambiente e limites da evidência. `imagens_por_tarefa.json` relaciona os prints e `cobertura-imagens.json` informa as páginas verificadas.
+Relatório atualizado com 39 páginas e imagens em cada uma das 16 tarefas. A página 4 mostra o GitHub de Beatriz na pasta `Projeto Final`, atualizado em 19/11/2026; as páginas 30 e 31 mostram a requisição JSON e a resposta HTTP 201 executadas no Swagger local. As legendas identificam telas, código, ambiente e limites da evidência. `imagens_por_tarefa.json` relaciona os prints e `cobertura-imagens.json` informa as páginas verificadas.
+
+## Cópia compartilhada com Beatriz — 19/11/2026
+
+[Abrir Projeto Final no GitHub da Beatriz](https://github.com/beamayumi31-lgtm/Edu-Tracker-AI-Beatriz/tree/main/Projeto%20Final). O repositório permanece privado. O PDF preserva as outras 38 páginas do relatório original; a nova imagem da página 4 identifica o destino desta cópia. Os PRs citados continuam sendo os do repositório original do grupo.

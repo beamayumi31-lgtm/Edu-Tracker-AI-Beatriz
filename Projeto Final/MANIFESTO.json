@@ -1,5 +1,5 @@
 {
-  "data": "2026-11-17",
+  "data": "2026-11-19",
   "arquivos": [
     {
       "arquivo": ".dockerignore",
@@ -133,8 +133,8 @@
     },
     {
       "arquivo": "docs/innovation-lab/cobertura-imagens.json",
-      "bytes": 1852,
-      "sha256": "cac7ac5428f479334c95832905af80d4b3dc0b93db3b58ea9d3129f8eeeac5f1"
+      "bytes": 2046,
+      "sha256": "2fa4d0d830556f6239fc2bf3dc8c400b3aa9a9af760ed1ecafd25b966b0b2681"
     },
     {
       "arquivo": "docs/innovation-lab/evidencias/01-03-vscode-versoes.png",
@@ -145,6 +145,11 @@
       "arquivo": "docs/innovation-lab/evidencias/01-git-historico.png",
       "bytes": 147160,
       "sha256": "0825e58bee9a290950f9696b3916a8de595da2523de65a2826785d5e9f69efa3"
+    },
+    {
+      "arquivo": "docs/innovation-lab/evidencias/01-github-projeto-final-beatriz.jpg",
+      "bytes": 105772,
+      "sha256": "bdeaf1d5c39a046091c065e73e673668db79f28d1ee3887fce4f39a49d0aeb37"
     },
     {
       "arquivo": "docs/innovation-lab/evidencias/01-github-projeto-final.png",
@@ -328,13 +333,13 @@
     },
     {
       "arquivo": "docs/innovation-lab/imagens_por_tarefa.json",
-      "bytes": 4604,
-      "sha256": "45975b70e74f8cb3164c7efb9764da73a948b3ccf3ea15266de8f5606714bf7b"
+      "bytes": 5264,
+      "sha256": "fabd2bbf7e6bc385c665069dc027281de6ef83811735532737142d820dbded9c"
     },
     {
       "arquivo": "docs/innovation-lab/LEIA-ME.md",
-      "bytes": 2070,
-      "sha256": "9680aa3003dcd76e47713617bdacbc94979deda990e41d93bdee5af1a845981e"
+      "bytes": 2505,
+      "sha256": "e945d1d934f855b92039db6d5e3eceb07eda2f77440403bdfe6982d2311673ac"
     },
     {
       "arquivo": "docs/innovation-lab/LEITURA_AGENTS_IA.md",
@@ -348,8 +353,8 @@
     },
     {
       "arquivo": "docs/innovation-lab/RELATORIO_FINAL.pdf",
-      "bytes": 3203477,
-      "sha256": "b7e2cf8a6d9014e3de862d5ecfad9a48f8ea397e9030ef317af519c56233b5f2"
+      "bytes": 3300699,
+      "sha256": "c81f642e23b89cc47f6eafc1163c9a37f79cd5b6430ecf9d71dc8f6485d31241"
     },
     {
       "arquivo": "docs/innovation-lab/resumo.json",
@@ -358,8 +363,8 @@
     },
     {
       "arquivo": "docs/innovation-lab/tarefa-01.md",
-      "bytes": 1556,
-      "sha256": "6921857781b2f2686dfe1b594ee38d3f7f375fab1ac85dc32eca4b7dead34454"
+      "bytes": 2010,
+      "sha256": "05277abb2dbae385754dd5107f7f48f0c839674b0521722091dc95bf7c30911a"
     },
     {
       "arquivo": "docs/innovation-lab/tarefa-02.md",
@@ -1722,10 +1727,17 @@
       "sha256": "62fbfd397a2550cf9503fa33c2a1b07fa05b525342a71abeb088e63845e48076"
     },
     {
+      "arquivo": "ORIGEM.md",
+      "bytes": 931,
+      "sha256": "c1b95c7c5f725bd45bd800c21e8906027888b5345c2e43bdc95f44521697cff3"
+    },
+    {
       "arquivo": "README.md",
       "bytes": 4099,
       "sha256": "05423d29c67403e983deb5f48bc01a85d64dd9265ed1c26fe96701a4f94a275f"
     }
   ],
-  "nota": "Fontes revisadas e evidências fictícias; sem dependências, bancos de alunos ou segredos locais. Não comprova deploy."
+  "nota": "Fontes revisadas e evidências fictícias; sem dependências, bancos de alunos ou segredos locais. Não comprova deploy.",
+  "origem_commit": "5bdceefb698240157f8b23837b70f248567fd138",
+  "revisao": "Cópia compartilhada com Beatriz; página 4 do PDF atualizada com captura real do repositório de destino."
 }

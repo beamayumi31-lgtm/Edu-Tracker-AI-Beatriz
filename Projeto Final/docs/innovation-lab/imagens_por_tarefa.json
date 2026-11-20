@@ -1,18 +1,142 @@
 {
-  "1": [["01-github-projeto-final.png", "GitHub de Antonio Brites: repositório Faculdade-Impacta aberto em 2-semestre/Projeto Final, na branch codex/innovation-lab-16-tarefas. A imagem mostra as pastas do backend, frontend e documentação. O PR final #2 permanece aberto para revisão."], ["01-git-historico.png", "Histórico real dos commits no terminal do VS Code. Mostra a implementação, o PR anterior integrado e a branch de avaliação."]],
-  "2": [["01-03-vscode-versoes.png", "Ambiente verificado no terminal: Git, Node.js, npm, VS Code e OpenSpec. Este registro corresponde à execução original da entrega; não comprova autenticação no Gemini."]],
-  "3": [["03-openspec-contexto.png", "OpenSpec no VS Code: contexto do projeto, requisitos consolidados, mudanças e arquivo das propostas. O texto identifica os guias autorais de compatibilidade."]],
-  "4": [["04-backend-python.png", "Backend Python/FastAPI real: módulos importados, usuário autenticado e rotas da API. Representa a adaptação de XanoScript para a arquitetura mantida."], ["01-git-historico.png", "Versionamento e sincronização: a implementação foi registrada em commit e enviada à branch acadêmica."]],
-  "5": [["05-pr-integrado.jpg", "PR #1 de documentação integrado no GitHub. Evidência do ciclo branch, commit, revisão e merge."]],
-  "6": [["06-figma-dashboard.jpg", "Cópia do Dashboard for E-Learning no Figma, utilizada na pesquisa de layout e componentes."], ["06-figma-componentes.jpg", "Cópia do Obra Community com páginas de componentes e estilos. Recursos PRO não foram utilizados."]],
-  "7": [["09-dashboard.jpg", "Frontend React existente: identidade visual, navegação e componentes do painel em uma conta fictícia."], ["07-frontend-api.png", "Cliente TypeScript da API: download autenticado, validação do caminho, verificação de conta e tratamento de falhas."]],
-  "8": [["08-modelo-disciplinas.png", "Modelo SQLAlchemy de cursos e disciplinas: campos, chaves e vínculo por usuário. Não representa uma migração executada em banco real nesta rodada."]],
-  "9": [["09-dashboard.jpg", "Dashboard: navegação principal, indicadores e acesso às funcionalidades."], ["09-disciplinas.jpg", "Disciplinas: organização das matérias vinculadas aos cursos."], ["09-tarefas.jpg", "Tarefas: lista de atividades e estados. Os dados desta prévia são fictícios."]],
-  "10": [["10-agents-regras.png", "AGENTS.md real: arquitetura, regras de comunicação, proteção dos dados e padrões de implementação."], ["10-proposta-notas.png", "Proposta de notas arquivada como exercício de planejamento. O documento deixa explícito que nenhum endpoint, tabela ou permissão de notas foi implementado."]],
-  "11": [["11-modelo-tarefas.png", "Modelo de tarefas acadêmicas: relação com disciplina e usuário, título, descrição, prazo, status, estimativa e conclusão. As restrições aparecem no próprio código."]],
-  "12": [["12-funcao-progresso.png", "Função Python compartilhada: valida entradas, trata total zero e calcula o percentual inteiro."], ["01-03-vscode-versoes.png", "Execução real registrada no terminal: três tarefas concluídas de quatro elegíveis retornam percentage igual a 75."]],
-  "13": [["13-api-requisicao.png", "Requisição real no Swagger: POST /api/disciplines, conteúdo application/json. O corpo informa curso_id, nome, professor e carga_horaria. O botão Execute envia o cadastro. Demonstração local com dados fictícios e SQLite temporário."], ["13-api-resposta-201.png", "Resposta real do mesmo envio: HTTP 201, corpo JSON com os campos cadastrados, id, criado_em e atualizado_em. A área Server response registra o resultado da execução, incluindo duração de 156 ms; não é apenas o exemplo estático do contrato."]],
-  "14": [["14-busca-avancada.jpg", "Busca avançada acionada no Chrome. A tela explica a combinação por nome OU atraso e mostra o resultado retornado."]],
-  "15": [["15-relatorios.jpg", "Tela de relatórios com o botão de PDF. O download foi acionado e o arquivo foi conferido."], ["15-pdf-renderizado.png", "PDF produzido pela API com dados fictícios: três tarefas concluídas de quatro elegíveis, total de 75%."]],
-  "16": [["16-pr-final.jpg", "PR final #2 aberto para revisão do professor. A captura registra sua criação; os arquivos documentais foram atualizados posteriormente na mesma branch."], ["16-testes-backend.png", "Log real da execução anterior aberto no VS Code: 200 testes aprovados, 16 testes POSIX pulados no Windows e um aviso de depreciação. Não é uma nova execução da suíte."]]
+  "1": [
+    [
+      "01-github-projeto-final-beatriz.jpg",
+      "GitHub de Beatriz: repositório privado Edu-Tracker-AI-Beatriz, pasta Projeto Final na branch main. Cópia do trabalho em grupo em 19/11/2026. Os demais registros e os PRs #1 e #2 pertencem à execução original no repositório de Antonio."
+    ],
+    [
+      "01-git-historico.png",
+      "Histórico real dos commits no terminal do VS Code. Mostra a implementação, o PR anterior integrado e a branch de avaliação."
+    ]
+  ],
+  "2": [
+    [
+      "01-03-vscode-versoes.png",
+      "Ambiente verificado no terminal: Git, Node.js, npm, VS Code e OpenSpec. Este registro corresponde à execução original da entrega; não comprova autenticação no Gemini."
+    ]
+  ],
+  "3": [
+    [
+      "03-openspec-contexto.png",
+      "OpenSpec no VS Code: contexto do projeto, requisitos consolidados, mudanças e arquivo das propostas. O texto identifica os guias autorais de compatibilidade."
+    ]
+  ],
+  "4": [
+    [
+      "04-backend-python.png",
+      "Backend Python/FastAPI real: módulos importados, usuário autenticado e rotas da API. Representa a adaptação de XanoScript para a arquitetura mantida."
+    ],
+    [
+      "01-git-historico.png",
+      "Versionamento e sincronização: a implementação foi registrada em commit e enviada à branch acadêmica."
+    ]
+  ],
+  "5": [
+    [
+      "05-pr-integrado.jpg",
+      "PR #1 de documentação integrado no GitHub. Evidência do ciclo branch, commit, revisão e merge."
+    ]
+  ],
+  "6": [
+    [
+      "06-figma-dashboard.jpg",
+      "Cópia do Dashboard for E-Learning no Figma, utilizada na pesquisa de layout e componentes."
+    ],
+    [
+      "06-figma-componentes.jpg",
+      "Cópia do Obra Community com páginas de componentes e estilos. Recursos PRO não foram utilizados."
+    ]
+  ],
+  "7": [
+    [
+      "09-dashboard.jpg",
+      "Frontend React existente: identidade visual, navegação e componentes do painel em uma conta fictícia."
+    ],
+    [
+      "07-frontend-api.png",
+      "Cliente TypeScript da API: download autenticado, validação do caminho, verificação de conta e tratamento de falhas."
+    ]
+  ],
+  "8": [
+    [
+      "08-modelo-disciplinas.png",
+      "Modelo SQLAlchemy de cursos e disciplinas: campos, chaves e vínculo por usuário. Não representa uma migração executada em banco real nesta rodada."
+    ]
+  ],
+  "9": [
+    [
+      "09-dashboard.jpg",
+      "Dashboard: navegação principal, indicadores e acesso às funcionalidades."
+    ],
+    [
+      "09-disciplinas.jpg",
+      "Disciplinas: organização das matérias vinculadas aos cursos."
+    ],
+    [
+      "09-tarefas.jpg",
+      "Tarefas: lista de atividades e estados. Os dados desta prévia são fictícios."
+    ]
+  ],
+  "10": [
+    [
+      "10-agents-regras.png",
+      "AGENTS.md real: arquitetura, regras de comunicação, proteção dos dados e padrões de implementação."
+    ],
+    [
+      "10-proposta-notas.png",
+      "Proposta de notas arquivada como exercício de planejamento. O documento deixa explícito que nenhum endpoint, tabela ou permissão de notas foi implementado."
+    ]
+  ],
+  "11": [
+    [
+      "11-modelo-tarefas.png",
+      "Modelo de tarefas acadêmicas: relação com disciplina e usuário, título, descrição, prazo, status, estimativa e conclusão. As restrições aparecem no próprio código."
+    ]
+  ],
+  "12": [
+    [
+      "12-funcao-progresso.png",
+      "Função Python compartilhada: valida entradas, trata total zero e calcula o percentual inteiro."
+    ],
+    [
+      "01-03-vscode-versoes.png",
+      "Execução real registrada no terminal: três tarefas concluídas de quatro elegíveis retornam percentage igual a 75."
+    ]
+  ],
+  "13": [
+    [
+      "13-api-requisicao.png",
+      "Requisição real no Swagger: POST /api/disciplines, conteúdo application/json. O corpo informa curso_id, nome, professor e carga_horaria. O botão Execute envia o cadastro. Demonstração local com dados fictícios e SQLite temporário."
+    ],
+    [
+      "13-api-resposta-201.png",
+      "Resposta real do mesmo envio: HTTP 201, corpo JSON com os campos cadastrados, id, criado_em e atualizado_em. A área Server response registra o resultado da execução, incluindo duração de 156 ms; não é apenas o exemplo estático do contrato."
+    ]
+  ],
+  "14": [
+    [
+      "14-busca-avancada.jpg",
+      "Busca avançada acionada no Chrome. A tela explica a combinação por nome OU atraso e mostra o resultado retornado."
+    ]
+  ],
+  "15": [
+    [
+      "15-relatorios.jpg",
+      "Tela de relatórios com o botão de PDF. O download foi acionado e o arquivo foi conferido."
+    ],
+    [
+      "15-pdf-renderizado.png",
+      "PDF produzido pela API com dados fictícios: três tarefas concluídas de quatro elegíveis, total de 75%."
+    ]
+  ],
+  "16": [
+    [
+      "16-pr-final.jpg",
+      "PR final #2 aberto para revisão do professor. A captura registra sua criação; os arquivos documentais foram atualizados posteriormente na mesma branch."
+    ],
+    [
+      "16-testes-backend.png",
+      "Log real da execução anterior aberto no VS Code: 200 testes aprovados, 16 testes POSIX pulados no Windows e um aviso de depreciação. Não é uma nova execução da suíte."
+    ]
+  ]
 }

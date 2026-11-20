@@ -24,3 +24,7 @@ Comandos de conferência: `git --version`, `git status --short`, `git log --onel
 - [Abrir referência](https://github.com/antoniobrites/Faculdade-Impacta/pull/1)
 
 Consulte também o índice, a matriz de adaptações e os arquivos em `evidencias/` deste pacote.
+
+## Cópia do grupo na conta da Beatriz
+
+Em 19/11/2026, somente o EduTrack foi copiado para [Projeto Final no repositório de Beatriz](https://github.com/beamayumi31-lgtm/Edu-Tracker-AI-Beatriz/tree/main/Projeto%20Final), mantendo a referência ao commit de origem e a autoria do grupo. Veja [a nova evidência do GitHub](evidencias/01-github-projeto-final-beatriz.jpg) e `ORIGEM.md` na raiz do projeto. Os registros acima documentam a entrega original.
